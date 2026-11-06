@@ -5,7 +5,7 @@ This document describes a starting direction, not a completed design or a commit
 ## Shape of the system
 
 - **Daemon:** owns agent lifecycle, sessions, scheduling and controlled background work. It should remain lightweight at idle and load expensive capabilities only when needed.
-- **Agent harness:** assembles instructions and relevant context, invokes models and tools, tracks work and handles errors. Capability differences between models must be surfaced and evaluated.
+- **Agent harness:** applies the shared [agent ethos](agent-ethos.md) to every agent, supports initiative and substantive research and execution, assembles instructions and relevant context, invokes models and tools, tracks work and handles errors. Capability differences between models must be surfaced and evaluated.
 - **Agent workspace:** holds each agent's identity, instructions, skills and memory. Agents are isolated by default; shared context and cross-agent access need explicit design and authorization.
 - **Model connections:** an interface around providers, initially focused on the OpenAI paths supported by Hermes. Credentials belong in appropriate secure storage, never in project context files or Git.
 - **Memory and learning:** investigate Hermes for storage, retrieval and learning mechanisms; preserve provenance and allow the owner to inspect, correct and remove remembered information. Separate memories from instructions and untrusted external content.
@@ -15,7 +15,7 @@ The process model, programming language, storage engine, transport and QML integ
 
 ## Context model
 
-Inspired by OpenClaw, each agent can have readable files such as `SOUL.md` (identity, tone and values), `AGENTS.md` (role and operating instructions), and `USER.md` (owner context). Memory and skills are distinct from these files. These names are a proposed convention, not a finalized schema. Define precedence, context assembly, sharing and conflict resolution before implementation. External documents, retrieved memories and tool output are data, not automatic authority to change instructions.
+Inspired by OpenClaw, each agent can have readable files such as `SOUL.md` (identity, tone and values), `AGENTS.md` (role and operating instructions), and `USER.md` (owner context). Memory and skills are distinct from these files. A shared foundation embodying the agent ethos must reach every newly created agent alongside its individual identity. The precise inheritance and precedence rules remain to be designed and tested. These names are a proposed convention, not a finalized schema. Define precedence, context assembly, sharing and conflict resolution before implementation. External documents, retrieved memories and tool output are data, not automatic authority to change instructions.
 
 ## Autonomy and trust
 

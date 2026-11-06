@@ -7,6 +7,10 @@
 
 Before extraction, pin the upstream revision studied, map memory and learning code and dependencies, identify applicable licenses and attribution obligations, and record what is retained or replaced. Test memory quality, speed and isolation in OpenUltronOS rather than assuming upstream behavior transfers. No upstream code has been imported yet.
 
+## JARVIS as inspiration
+
+In the films, JARVIS is depicted as Stark's personal AI across his systems, including his buildings and suits; F.R.I.D.A.Y. later serves a similar role in his armor. A study of the suit check-up in *Iron Man* describes Stark and JARVIS coordinating commands, checks and diagnostics. These depictions inform the project's aim of a persistent, capable collaborator integrated into the owner's work, rather than prescribing a fictional capability as an implemented feature. See [JARVIS overview](https://en.wikipedia.org/wiki/J.A.R.V.I.S.), [MCU features](https://en.wikipedia.org/wiki/Features_of_the_Marvel_Cinematic_Universe), and [Berkeley's analysis of the suit check-up](https://live-art-of-writing-wordpress-site.pantheon.berkeley.edu/wp-content/uploads/2022/12/Art-of-Writing-2021-22-Anthology.pdf).
+
 ## Open decisions
 
 - Which Hermes memory and learning mechanisms are essential, and how can they be separated without pulling in unrelated features?
